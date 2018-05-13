@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>EMAR Face Editing Panel</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+  
+  <div id="top" class="topbar"></div>
+
+    <div class="wrapper">
+      <h1> Face Control Panel </h1>
+      
+      <div id="main">
+        
+        <div class="faceControls">
+          <div> </div>
+          <div class="control">
+            Robot:
+            <select class="selectList" id="robotSelect" name="expressionSelect" multiple>
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          
+        </div>
+        
+        <div class="threeParts">
+          <input type="button" class="smallButton" onclick="startEditor()" value="Face Editor">
+          <input type="button" class="smallButton" onclick="startController()" value="Face Controller">
+          <input type="button" class="smallButton" onclick="startRenderer()" value="Face Renderer">
+        </div>
+        
+      </div>
+  </div>
+
+  <script src="scripts/index.js"></script>
+
+  </body>
+</html>

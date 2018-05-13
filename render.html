@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <!--<meta name="mobile-web-app-capable" content="yes">-->
+  <link rel="manifest" href="/manifest.json">
+  <title>EMAR Face Renderer</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+  
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+</head>
+
+<body onload="initializeRender();" onresize="drawFace();">
+
+  <div class="wrapper" id="facewrapper">
+<!--     <div id="robotSpeech"> Hello, my name is EMAR</div> -->
+    <div id="robotFace">
+      <svg id="faceSVG">
+      </svg>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+  <script src="scripts/parameters.js"></script>
+  <script src="scripts/v1eyes.js"></script>
+  <script src="scripts/v2eyes.js"></script>
+  <script src="scripts/mouth.js"></script>
+  <script src="scripts/face.js"></script>
+  <script src="scripts/voice.js"></script>
+  <script src="scripts/database.js"></script>
+  <script src="scripts/render.js"></script>
+</body>
+
+</html>

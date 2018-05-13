@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <!--<meta name="mobile-web-app-capable" content="yes">-->
+  <link rel="manifest" href="/manifest.json">
+  <title>EMAR Belly Renderer</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body onload="signIn();">
+
+  <div class="wrapper">
+    <div id="question">
+      <p>How stressed do you feel right now?</p>
+    </div>
+
+    <div id="slideContainer">
+      <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+      <div id="output"></div>
+    </div>
+
+    <div id="buttonContainer">
+      <input type="submit" value="Enter" id="submit">
+    </div>
+    
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+  <script src="scripts/edit.js"></script>
+  <script src="scripts/belly.js"></script>
+</body>
+
+</html>

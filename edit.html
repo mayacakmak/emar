@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>EMAR Face Editing Panel</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+</head>
+
+<body onload="initializeEdit();">
+
+  <div id="top" class="topbar"></div>
+
+  <div class="sidebyside">
+    <div class="wrapper">
+      <h1> Face Editing Panel </h1>
+      <div id="main"></div>
+    </div>
+
+    <div class="facewrapper" id="facewrapper">
+      <div id="robotFace">
+        <svg id="faceSVG">
+          </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+  <script src="scripts/parameters.js"></script>
+  <script src="scripts/v1eyes.js"></script>
+  <script src="scripts/v2eyes.js"></script>
+  <script src="scripts/mouth.js"></script>
+  <script src="scripts/face.js"></script>
+  <script src="scripts/voice.js"></script>
+  <script src="scripts/database.js"></script>
+  <script src="scripts/edit.js"></script>
+</body>
+
+</html>
